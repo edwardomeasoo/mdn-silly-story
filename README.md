@@ -1,9 +1,9 @@
 # Project Brief
 Using the provided HTML, CSS and text strings, write the necessary Javascript to finish the program which does:
-[] Generate a silly story when the button is pressed
-[] Replace the default name 'Bob' with a custom name, if a custom name is entered
-[] Convert the default US weight and temperature measurements into UK equivalents, if radio button is selected
-[] Generate another random silly story if the button is pressed again
+* Generate a silly story when the button is pressed
+* Replace the default name 'Bob' with a custom name, if a custom name is entered
+* Convert the default US weight and temperature measurements into UK equivalents, if radio button is selected
+* Generate another random silly story if the button is pressed again
 
 # Steps
 ## Architecturing
