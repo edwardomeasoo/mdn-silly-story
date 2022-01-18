@@ -1,9 +1,11 @@
 # Project Brief
-Using the provided HTML, CSS and text strings, write the necessary Javascript to finish the program which does:
+Using the provided HTML, CSS and text strings, write the necessary Javascript to finish the program which will:
 * Generate a silly story when the button is pressed
 * Replace the default name 'Bob' with a custom name, if a custom name is entered
 * Convert the default US weight and temperature measurements into UK equivalents, if radio button is selected
 * Generate another random silly story if the button is pressed again
+
+[Finished example](https://mdn.github.io/learning-area/javascript/introduction-to-js-1/assessment-finished/)
 
 # Steps
 ## Architecturing
@@ -11,7 +13,7 @@ Using the provided HTML, CSS and text strings, write the necessary Javascript to
 2. Link to `main.js` in `index.html`
 ## Variables and Functions
 1. Copy all code under "1. COMPLETE VARIABLE AND FUNCTION DEFINITIONS" from raw text file, paste into `main.js`
-2. From "2. RAW TEXT STRINGS" in raw text file, copy the text strings into:\
+2. From "2. RAW TEXT STRINGS" in raw text file, copy the text strings into:  
 	* `storyText` = first big long string
 	* `insertX` = the set of 3 strings, in an array
 	* `insertY` = the second set of 3 strings
@@ -28,9 +30,9 @@ Using the provided HTML, CSS and text strings, write the necessary Javascript to
 5. Inside the first `if` block, add another string replacement method call to replace the name `Bob` in the `newStory` string, if a `name` was submitted\
 	`if` a value has been entered into the `customName` text input, replace `Bob` with `customName.value`
 
-6. Inside the second `if` block, check to see if `uk` radio button has been selected. If yes, \
-	- convert the weight and temperature values and units
-	- replace '94 fahrenheit' with contents of `temperature` variable
-	- replace '300 pounds' with contents of `weight` variable
+6. Inside the second `if` block, check to see if `uk` radio button has been selected. If yes:
+	* convert the weight and temperature values and units
+	* replace '94 fahrenheit' with contents of `temperature` variable
+	* replace '300 pounds' with contents of `weight` variable
 
 7. Make `textContent` of `story` variable (which references the paragraph element) equal to `newStory`
