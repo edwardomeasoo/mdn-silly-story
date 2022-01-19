@@ -23,24 +23,24 @@ function result() {
   const yItem = randomValueFromArray(insertY);
   const zItem = randomValueFromArray(insertZ);
 
-  // use regex object to replace instances of :insertx: https://stackoverflow.com/a/494046
+  // use regex object to replace instances of ':insertx:' https://stackoverflow.com/a/494046
   const rex = new RegExp(":insertx:", "g");
 
   newStory = newStory.replace(rex, xItem);
-  console.log(newStory);
+  newStory = newStory.replace(":inserty:", yItem);
+  newStory = newStory.replace(":insertz:", zItem);
 
   if(customName.value !== '') {
     const name = customName.value;
-
-
+    newStory = newStory.replace(/Bob/g, name);
   }
-
-
+  
+  
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
-
-
+    const weight = Math.round(300 / 14) + ' stone';
+    const temperature =  Math.round((94-32) *5 /9) + ' centigrade';
+    newStory = newStory.replace(/300 pounds/g, weight);
+    newStory = newStory.replace(/94 fahrenheit/g, temperature);
   }
 
 
